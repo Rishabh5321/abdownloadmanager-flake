@@ -20,6 +20,7 @@
       packages = forAllSystems (
         { pkgs, ... }:
         {
+          ab-download-manager = pkgs.callPackage ./package.nix { };
           default = pkgs.callPackage ./package.nix { };
         }
       );
