@@ -26,17 +26,17 @@
       );
 
       # Optional: uncomment to enable devShell
-      devShells = forAllSystems (
-        { pkgs, ... }:
-        {
-          default = pkgs.mkShell {
-            buildInputs = [
-              pkgs.callPackage
-              ./package.nix
-              { }
-            ];
-          };
-        }
-      );
+      # devShells = forAllSystems (
+      #   { pkgs, ... }:
+      #   {
+      #     default = pkgs.mkShell {
+      #       buildInputs = [
+      #         pkgs.callPackage
+      #         ./package.nix
+      #         { }
+      #       ];
+      #     };
+      #   }
+      # );
     };
 }
